@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Associate page</title>
-    <link rel="stylesheet" type="text/css" href="\\CTSINTBMDNAS01\CHNhomedrive\572826\Desktop\Groots\css\style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="nav_bar">
@@ -13,17 +13,80 @@
         </ul>
     </div>
     <div class="main_container">
-        <p>This is plant booking page</p>
+        <fieldset>
+            <legend>Location:</legend>
+        <div class="Location">
+        <select name ="Location">
+            <option value="blank"></option>
+            <option value="Location1">Loc1</option>
+          <option value="Location2">Loc2</option>
+        </select>
+        </div>
+        </fieldset>
+        </fieldset>
         <form>
+            <div class="types">
             <fieldset>
             <legend> Types:</legend>
-            <input type="checkbox" name="Plant1" value="Plant1"> Plant1<br>
-            <input type="checkbox" name="Plant2" value="Plant2"> Plant2<br>
-            <input type="checkbox" name="Plant3" value="Plant3"> Plant3<br>
-            <input type="checkbox" name="Plant4" value="Plant4"> Plant4<br>
-            <input type="checkbox" name="Fertilizer" value="Fertilizer"> Fertilizer<br>
+            <div class="Check-box">
+                <div class="left-side">
+                    <input type="checkbox" name="Plant1" value="Plant1"> Plant1<br>
+                </div>
+                <div class="right-side">
+                        <div>Plant1 count :</div>
+                        <div id="count1"></div>
+                </div>
+            </div>
+            <div class="Check-box">
+                <div class="left-side">
+                    <input type="checkbox" name="Plant2" value="Plant2"> Plant2<br>
+                </div>
+                <div class="right-side">
+                        <div>Plant2 count :</div>
+                        <div id="count2"></div>
+                </div>
+            </div>
+            <div class="Check-box">
+                <div class="left-side">
+                    <input type="checkbox" name="Plant3" value="Plant3"> Plant3<br>
+                </div>
+                <div class="right-side">
+                        <div>Plant3 count :</div>
+                        <div id="count3"></div>
+                </div>
+            </div>
+            <div class="Check-box">
+                <div class="left-side">
+                    <input type="checkbox" name="Plant4" value="Plant4"> Plant4<br>
+                </div>
+                <div class="right-side">
+                        <div>Plant4 count :</div>
+                        <div id="count4"></div>
+                </div>
+            </div>
+            <div class="Check-box">
+                <div class="left-side">
+                    <input type="checkbox" name="Fertilizer" value="Fertilizer"> Fertilizer<br>
+                </div>
+                <div class="right-side">
+                        <div>Fertilizer count :</div>
+                        <div id="count5"></div>
+                </div>
+            </div>
             </fieldset>
-            </form>
         </div>
+            <div class = "submit">
+            <input type="button" name="submit" value="Submit" onclick="validate()">
+            </div>
+            </form>
+
+        </div>
+        <script>
+            document.getElementById("count1").innerHTML =11;
+            document.getElementById("count2").innerHTML =12;
+            document.getElementById("count3").innerHTML =20;
+            document.getElementById("count4").innerHTML =25;
+            document.getElementById("count5").innerHTML =24;
+        </script>
 </body>
 </html>             
